@@ -1,5 +1,5 @@
 :root {
-   --orange: #FB7613;
+   --orange: hsl(25, 97%, 53%);
    --white: hsl(0, 0%, 100%);
    --light-grey: hsl(217, 12%, 63%);
    --medium-grey: hsl(216, 12%, 54%);
@@ -43,7 +43,7 @@ button {border: none;}
 
 .rating,
 .thank-you  {
-   max-width: 350px;
+   max-width: 370px;
    background-color: var(--dark-blue);
    padding: 30px;
    border-radius: 20px;
@@ -51,7 +51,7 @@ button {border: none;}
 
 .rating .rating-img {
    background-color: var(--medium-grey);
-   padding: 10px;
+   padding: 15px;
    border-radius: 50%;
 }
 
@@ -71,9 +71,10 @@ button {border: none;}
 }
 
 .rating .btn-select {
-   background-color: var(--dark-blue);
-   padding: 10px;
+   background-color: var(--medium-grey);
    color: var(--light-grey);
+   padding: 15px;
+   border-radius: 50%;
 }
 
 .rating .btn-submit {
