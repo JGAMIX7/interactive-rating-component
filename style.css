@@ -3,6 +3,7 @@
    --white: hsl(0, 0%, 100%);
    --light-grey: hsl(217, 12%, 63%);
    --medium-grey: hsl(216, 12%, 54%);
+   --dark-grey: hsl(210, 17%, 12%);
    --dark-blue: hsl(213, 19%, 18%);
    --very-dark-blue: hsl(216, 12%, 8%);
 }
@@ -16,6 +17,11 @@
 body {
    background-color: var(--very-dark-blue);
    font-family: 'Overpass', sans-serif;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   min-height: 100vh;
 }
 
 h1 {
@@ -32,27 +38,21 @@ ul {list-style: none;}
 
 button {border: none;}
 
-.container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-}
-
 .rating,
 .thank-you  {
-   max-width: 400px;
+   max-width: 380px;
    background-color: var(--dark-blue);
    border-radius: 20px;
+   padding: 24px;
+   margin: 20px;
 }
 
 .rating {
    display: none;
-   padding: 30px;
 }
 
 .rating img {
-   background-color: var(--medium-grey);
+   background-color: var(--dark-grey);
    padding: 15px;
    border-radius: 50%;
 }
@@ -74,9 +74,10 @@ button {border: none;}
 
 .rating .btn-select {
    background-color: var(--medium-grey);
-   color: var(--light-grey);
-   font-size: 15px;
-   padding: 15px;
+   color: var(--medium-grey);
+   font-size: 16px;
+   font-weight: 700;
+   padding: 15px 20px;
    border-radius: 50%;
    cursor: pointer;
    transition: all .3s;
@@ -103,7 +104,8 @@ button {border: none;}
 .thank-you {
    display: block;
    text-align: center;
-   padding: 45px 30px;
+   /* transform: scale(.5);
+   opacity: 0; */
 }
 
 .thank-you img-box {
@@ -113,7 +115,7 @@ button {border: none;}
 .thank-you span {
    display:inline-block;
    color: var(--orange);
-   background-color: var(--medium-grey);
+   background-color: var(--light-grey);
    border: solid 1px var(--orange);
    border-radius: 20px;
    padding: 5px 15px;
