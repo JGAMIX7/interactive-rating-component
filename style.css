@@ -113,7 +113,7 @@ button {border: none;}
 .thank-you span {
    display:inline-block;
    color: var(--orange);
-   background-color: var(--dark-blue);
+   background-color: var(--medium-grey);
    border: solid 1px var(--orange);
    border-radius: 20px;
    padding: 5px 15px;
