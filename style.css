@@ -82,6 +82,14 @@ button {border: none;}
    cursor: pointer;
    transition: all .3s;
 }
+.rating .btn-select:hover {
+   background-color: var(--orange);
+   color: var(--white);
+}
+.rating .btn-select.active {
+   background-color: var(--medium-grey);
+   color: var(--white);
+}
 
 .rating .btn-submit {
    width: 100%;
@@ -95,8 +103,7 @@ button {border: none;}
    cursor: pointer;
    transition: all .3s;
 }
-.rating .btn-submit:hover,
-.rating .btn-select:hover  {
+.rating .btn-submit:hover {
    background-color: var(--white);
    color: var(--orange);
 }
@@ -128,4 +135,34 @@ button {border: none;}
 
 .thank-you p {
    line-height: 1.4;
+}
+
+@media screen and (max-width: 375px) {
+   .rating img {padding: 12px;}
+   
+   .rating h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 15px 0;
+   }
+
+   .rating .btn-select {
+      padding: 13px 18px;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .rating img {padding: 11px;}
+
+   .rating h1 {
+      margin: 10px 0;
+   }
+
+   .rating .btn-select {
+      padding: 12px 16px;
+   }
+
+   .rating ul {
+      margin: 10px 0 15px;
+   }
 }
