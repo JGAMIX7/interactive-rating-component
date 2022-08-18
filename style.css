@@ -111,8 +111,7 @@ button {border: none;}
 .thank-you {
    display: none;
    text-align: center;
-   /* transform: scale(.5);
-   opacity: 0; */
+   opacity: 0;
 }
 
 .thank-you img-box {
@@ -140,15 +139,28 @@ button {border: none;}
 @media screen and (max-width: 375px) {
    .rating img {padding: 12px;}
    
-   .rating h1 {
+   .rating h1,
+   .thank-you h1 {
       font-size: 24px;
       font-weight: 700;
+   }
+   .rating h1 {
       margin: 15px 0;
    }
 
    .rating .btn-select {
       padding: 13px 18px;
    }
+
+   .thank-you h1 {
+      margin-bottom: 10px;
+   }
+
+   .thank-you span {
+      margin-bottom: 25px;
+   }
+
+
 }
 
 @media screen and (max-width: 320px) {
