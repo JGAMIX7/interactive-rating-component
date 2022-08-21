@@ -108,8 +108,11 @@ button {border: none;}
    color: var(--orange);
 }
 
-.thank-you {
+.hidden {
    display: none;
+}
+
+.thank-you {
    text-align: center;
    opacity: 0;
 }
