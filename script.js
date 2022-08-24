@@ -1,11 +1,16 @@
 const ratingComponent = document.querySelector(".rating");
 const thanksComponent = document.querySelector(".thank-you");
 const submitBtn = document.querySelector(".btn-submit");
-const rates = document.getElementById("rate");
-const selectBtn = document.querySelector(".btn-select");
+const selectBtn = document.querySelectorAll(".btn-select");
+const rating = document.getElementById("rate");
 
 submitBtn.addEventListener("click", () => {
-   thanksComponent.classList.add("hidden");
-   ratingComponent.style.display = none;
-})
+   ratingComponent.classList.add("hidden");
+   thanksComponent.classList.remove("hidden");
+});
 
+selectBtn.forEach((rate) => {
+   rate.addEventListener("click", () => {
+      rating.innerHTML = rate.innerHTML;
+   });
+});

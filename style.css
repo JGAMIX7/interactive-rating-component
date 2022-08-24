@@ -86,7 +86,7 @@ button {border: none;}
    background-color: var(--orange);
    color: var(--white);
 }
-.rating .btn-select.active {
+.rating .btn-select:focus {
    background-color: var(--medium-grey);
    color: var(--white);
 }
@@ -114,14 +114,14 @@ button {border: none;}
 
 .thank-you {
    text-align: center;
-   opacity: 0;
+   /* opacity: 0; */
 }
 
 .thank-you img-box {
    text-align: center;
 }
 
-.thank-you span {
+.thank-you .text {
    display:inline-block;
    color: var(--orange);
    background-color: var(--dark-grey);
